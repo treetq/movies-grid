@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 100%;
+  width: 100vw;
+}
+
+main {
+  border: 10px solid rgb(202, 173, 10);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: antiquewhite;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  padding: 10px;
+  height: 100%;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid #555;
+  padding: 10px;
+  width: 350px;
+  height: 500px;
+  background: url("https://m.media-amazon.com/images/M/MV5BYTViNjMyNmUtNDFkNC00ZDRlLThmMDUtZDU2YWE4NGI2ZjVmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-radius: 5px;
+  border: 12px solid gold;
+}
