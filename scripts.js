@@ -168,13 +168,23 @@ const movies = [
     imdbRating: '8.5',
   },
 ];
+let main = document.getElementsByTagName('main');
+
+console.log(main);
+
+let input = document.getElementById('myfilter');
+
+
+
+console.log(input);
+
+//main.appendChild(input)
 
 for(let i=0; i<movies.length;i++){
   let gridItem  = document.createElement('div');
   gridItem.setAttribute('class','grid-item');
 
   gridItem.innerHTML = `
-              
                   <h1>title: ${movies[i].title},</h1>
                   <h3>year: ${movies[i].year},</h3>
                   <h3>genre: ${movies[i].genre},</h3>
@@ -185,9 +195,15 @@ for(let i=0; i<movies.length;i++){
   `
   gridItem.style.backgroundImage = `url(${movies[i].poster})`;
   let gridContainer = document.querySelector('.grid-container');
-  console.log(gridItem);
+  //console.log(gridItem);
+
+  input.addEventListener('keypress',function(){
+    //const filtred = movies.filter(el => )
+  });
 
   gridContainer.appendChild(gridItem)
 
 }
+
+
 

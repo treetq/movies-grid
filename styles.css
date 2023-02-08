@@ -11,13 +11,14 @@ body {
 }
 
 main {
-  border: 10px solid rgb(202, 173, 10);
+  /* border: 10px solid rgb(202, 173, 10); */
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 10px;
-  background-color: antiquewhite;
+  background-color: #20262e;
 }
 
 .grid-container {
@@ -34,14 +35,14 @@ main {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
   padding: 10px;
   width: 350px;
   height: 500px;
   background: url("https://m.media-amazon.com/images/M/MV5BYTViNjMyNmUtNDFkNC00ZDRlLThmMDUtZDU2YWE4NGI2ZjVmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
-  border-radius: 5px;
-  border: 12px solid gold;
+  color: #913175;
+  border-radius: 8px;
+  border: 12px solid #e9e8e8;
 }
